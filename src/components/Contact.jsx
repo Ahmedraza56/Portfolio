@@ -37,7 +37,7 @@ const Contact = () => {
       Swal.fire({
         icon: 'success',
         title: 'Success',
-        text: 'Thanks for Submit!',
+        text: 'Submitted successfully!',
       });
       setForm({ name: "", email: "", message: "" });
     }, (error) => {
@@ -58,15 +58,15 @@ const Contact = () => {
         <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='mb-4 text-white font-medium'>Your Name</span>
-            <input type="text" name='name' value={form.name} onChange={handleChange} placeholder='Whats your name' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <input type="text" name='name' value={form.name} onChange={handleChange} placeholder='Whats your name' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' required/>
           </label>
           <label className='flex flex-col'>
             <span className='mb-4 text-white font-medium'>Your Email</span>
-            <input type="email" name='email' value={form.email} onChange={handleChange} placeholder='Whats your Email' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <input type="email" name='email' value={form.email} onChange={handleChange} placeholder='Whats your Email' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' required/>
           </label>
           <label className='flex flex-col'>
             <span className='mb-4 text-white font-medium'>Your Message</span>
-            <textarea rows={7} name='message' value={form.message} onChange={handleChange} placeholder='What do you what to say' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            <textarea rows={7} name='message' value={form.message} onChange={handleChange} placeholder='What do you what to say' className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' required/>
           </label>
           <button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'>{loading ? "Sending..." : "Send"}</button>
         </form>
