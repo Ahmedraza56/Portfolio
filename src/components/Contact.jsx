@@ -16,7 +16,7 @@ const Contact = () => {
   const handleSubmit=(e)=>{
     e.preventDefault()
     setLoading(true)
-    emailjs.send("service_v6j7me5","template_6a110g6",{from_name:form.name,to_name:"Ahmed Raza",from_email:form.email,to_email:"ahmedrazy830@gmail.com",message:form.message},'9xywnRdzC9lZ12-l8'
+    emailjs.send("service_wnjmkag","template_g5chrdh",{from_name:form.name,to_name:"Ahmed Raza",from_email:form.email,to_email:"ahmedrazy830@gmail.com",message:form.message},'9xywnRdzC9lZ12-l8'
     ).then(()=>{
       setLoading(false)
       alert("Thanks for Submit")
