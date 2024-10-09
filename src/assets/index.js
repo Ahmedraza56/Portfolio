@@ -28,15 +28,13 @@ import screen from "./screen.svg";
 import linuxsvg from "./linux.svg";
 import figmasvg from "./figma.svg";
 
-
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-import vorker from "./vorker.png"
-import smi from "./smi.png"
-import pethouse from "./pethouse.png"
-
+import vorker from "./vorker.png";
+import ft from "./familyTree.png";
+import pethouse from "./pethouse.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -74,8 +72,8 @@ export {
   php,
   linux,
   vorker,
-  smi,
-  pethouse, 
+  ft,
+  pethouse,
   server,
   screen,
   linuxsvg,
