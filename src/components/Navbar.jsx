@@ -32,7 +32,7 @@ const Navbar = () => {
           <li>
             <a 
               href={cv} 
-              download="Ahmed's CV" // Set the filename here
+              download="Ahmed's CV.pdf" // Ensure filename with .pdf
               className="bg-[#915eff] text-white py-2 px-4 rounded-full hover:bg-white hover:text-[#915eff] transition duration-300 ease-in-out text-[18px] font-medium"
             >
               Download CV
@@ -60,7 +60,7 @@ const Navbar = () => {
               <li>
                 <a 
                   href={cv} 
-                  download="Ahmed's CV" // Set the filename here
+                  download="Ahmed's CV.pdf" // Ensure filename with .pdf
                   className="bg-[#915eff] text-white py-2 px-4 rounded-full hover:bg-white hover:text-[#915eff] transition duration-300 ease-in-out text-[16px] font-poppins font-medium"
                 >
                   Download CV
