@@ -28,11 +28,11 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
-          {/* CV Download Button with Updated Styling */}
+          {/* CV Download Button with Updated Styling and Filename */}
           <li>
             <a 
               href={cv} 
-              download 
+              download="Ahmed's CV" // Set the filename here
               className="bg-[#915eff] text-white py-2 px-4 rounded-full hover:bg-white hover:text-[#915eff] transition duration-300 ease-in-out text-[18px] font-medium"
             >
               Download CV
@@ -56,11 +56,11 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
-              {/* CV Download Button for Mobile View with Updated Styling */}
+              {/* CV Download Button for Mobile View with Updated Styling and Filename */}
               <li>
                 <a 
                   href={cv} 
-                  download 
+                  download="Ahmed's CV" // Set the filename here
                   className="bg-[#915eff] text-white py-2 px-4 rounded-full hover:bg-white hover:text-[#915eff] transition duration-300 ease-in-out text-[16px] font-poppins font-medium"
                 >
                   Download CV
@@ -75,4 +75,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-  
