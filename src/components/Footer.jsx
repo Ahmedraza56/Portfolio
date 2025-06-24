@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-      <p className="text-lg">&copy; 2024 Build by Ahmed Raza. All rights reserved.</p>
+      <p className="text-lg">&copy; 2025 Build by Ahmed Raza. All rights reserved.</p>
         <div className="flex space-x-4 text-lg">
         <a href="https://www.facebook.com/profile.php?id=100015746790720" className="text-gray-300 hover:text-white transition duration-300 ">
             <FontAwesomeIcon icon={faFacebook} />
